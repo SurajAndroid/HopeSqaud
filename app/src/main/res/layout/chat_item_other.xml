@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="6dp"
+        android:paddingLeft="20dp"
+        android:text="Hope Squad"
+        android:textColor="@color/text_color" />
+
+    <com.daasuu.bl.BubbleLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="10dp"
+        android:padding="6dp"
+        app:bl_arrowDirection="left_center"
+        app:bl_arrowHeight="10dp"
+        app:bl_arrowWidth="16dp"
+        app:bl_bubbleColor="#45d65e"
+        app:bl_cornersRadius="16dp">
+
+        <TextView
+            android:id="@+id/messageTxt"
+            style="@style/Base.TextAppearance.AppCompat.Medium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:textColor="@android:color/white" />
+    </com.daasuu.bl.BubbleLayout>
+</LinearLayout>

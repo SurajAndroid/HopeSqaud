@@ -1,0 +1,101 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:geekui="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom|center_horizontal"
+    android:layout_marginLeft="2dp"
+    android:layout_marginRight="2dp"
+    android:layout_marginBottom="15dp"
+    android:background="@null"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:padding="0dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@null"
+        android:gravity="center_horizontal|center_vertical"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/title_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/white_round_rect_up"
+            android:gravity="center"
+            android:paddingLeft="15dp"
+            android:paddingTop="14dp"
+            android:paddingRight="15dp"
+            android:paddingBottom="14dp"
+            android:text="Media Selection"
+            android:textColor="@color/text_color"
+            android:textSize="16sp"
+            android:visibility="visible" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:background="#00000000" />
+
+        <TextView
+            android:id="@+id/take_media"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/white_round_rect"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:maxLines="1"
+            android:paddingLeft="8dp"
+            android:paddingTop="18dp"
+            android:paddingRight="8dp"
+            android:paddingBottom="18dp"
+            android:text="Take Media"
+            android:textAllCaps="true"
+            android:textColor="@color/blue"
+            android:textSize="18sp"
+            android:textStyle="normal" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:background="#00000000" />
+
+        <TextView
+            android:id="@+id/select_media"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/white_round_rect_bottom"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:maxLines="1"
+            android:paddingLeft="8dp"
+            android:paddingTop="18dp"
+            android:paddingRight="8dp"
+            android:paddingBottom="18dp"
+            android:text="Select Media"
+            android:textAllCaps="true"
+            android:textColor="@color/blue"
+            android:textSize="18sp"
+            android:textStyle="normal" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/cancel"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/white_round_rect_both"
+        android:gravity="center"
+        android:paddingLeft="15dp"
+        android:paddingTop="5dp"
+        android:paddingRight="15dp"
+        android:paddingBottom="10dp"
+        android:textColor="@color/blue"
+        android:textSize="16sp"
+        android:visibility="visible" />
+
+
+</LinearLayout>

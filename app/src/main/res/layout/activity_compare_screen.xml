@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:orientation="vertical"
+    tools:context="com.hopesquad.activity.userimages.UserImagesActivity">
+
+
+    <android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="?attr/colorAccent"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        android:visibility="gone"
+        app:contentInsetEnd="0dp"
+        app:contentInsetLeft="0dp"
+        app:contentInsetRight="0dp"
+        app:contentInsetStart="0dp"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"></android.support.v7.widget.Toolbar>
+
+    <RelativeLayout
+        android:id="@+id/header_rl"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginBottom="0dp"
+        android:background="@color/colorAccent">
+
+
+        <TextView
+            android:id="@+id/cancel_tv"
+            android:layout_width="120dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:paddingLeft="8dp"
+            android:src="@drawable/logo_splash"
+            android:text="cancel"
+            android:textAllCaps="true"
+            android:textColor="@color/White"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/compare_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:background="?android:selectableItemBackground"
+            android:gravity="center_vertical"
+            android:text="Compare"
+            android:textAllCaps="true"
+            android:textColor="@color/White"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/header_rl"
+        android:layout_alignParentRight="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:padding="8dp"
+        android:text="Compare your Before and After picture"
+        android:textColor="@color/White"
+        android:textSize="18sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/btm"
+        android:layout_below="@+id/text"
+        android:background="@color/White"
+        android:orientation="vertical"
+        android:weightSum="2">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="1dp"
+            android:layout_weight="1"
+            android:background="#000000">
+
+
+            <ImageView
+                android:id="@+id/add_one_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="bottom|end"
+                android:layout_margin="1dp"
+                android:background="?android:selectableItemBackground"
+                android:scaleType="centerInside"
+                android:src="@mipmap/plus" />
+
+            <ImageView
+                android:id="@+id/add_one_iv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:layout_margin="1dp"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/close_one_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_margin="1dp"
+                android:background="?android:selectableItemBackground"
+                android:padding="8dp"
+                android:scaleType="center"
+                android:src="@mipmap/error"
+                android:tint="#D80027"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="1dp"
+            android:layout_weight="1"
+            android:background="#000000">
+
+            <ImageView
+                android:id="@+id/add_two_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="bottom|end"
+                android:layout_margin="1dp"
+                android:background="?android:selectableItemBackground"
+                android:scaleType="centerInside"
+                android:src="@mipmap/plus" />
+
+            <ImageView
+                android:id="@+id/add_two_iv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:layout_margin="1dp"
+                android:visibility="visible" />
+
+            <ImageView
+                android:id="@+id/close_two_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_margin="1dp"
+                android:background="?android:selectableItemBackground"
+                android:padding="8dp"
+                android:scaleType="center"
+                android:src="@mipmap/error"
+                android:tint="#D80027"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/btm"
+        android:layout_width="match_parent"
+        android:layout_height="48sp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <Button
+            android:id="@+id/download_btn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="5dp"
+            android:layout_weight="1"
+            android:background="#CDB900"
+            android:text="DOWNLOAD"
+            android:textColor="@color/White"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/upload_btn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="5dp"
+            android:layout_weight="1"
+            android:background="#F96612"
+            android:text="UPLOAD"
+            android:textColor="@color/White"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+</RelativeLayout>

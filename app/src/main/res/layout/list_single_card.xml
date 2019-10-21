@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/topRelay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity=""
+        android:orientation="vertical"
+        android:padding="4dp"
+        tools:ignore="MissingConstraints">
+
+        <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/userLogoImg"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:padding="8dp"
+            android:src="@mipmap/ic_user"
+            app:civ_border_color="@color/colorYellow"
+            app:civ_border_width="2dp" />
+
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/nameTxtView"
+            style="@style/Base.TextAppearance.AppCompat.Medium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="na"
+            android:textColor="@color/colorPrimary"
+            android:textSize="14sp"
+            android:textStyle="normal" />
+
+
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

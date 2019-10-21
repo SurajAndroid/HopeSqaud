@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Hope Squad</string>
+    <string name="facebook_app_id">1742327246044613</string>
+    <string name="fb_login_protocol_scheme">fb1742327246044613</string>
+
+    <!-- Splash Screen -->
+    <string name="do_not_have_account">Don\'t have an account yet?</string>
+
+    <string name="alert_registration_success">You have successfully registered with Hope Squad, Hope Squad will contact you soon for activation of your account.</string>
+    <string name="alert_no_photo_album">Hey Buddy! You don\'t have any photo album, Please ask your trainer to upload.</string>
+
+    <string-array name="array_target_goal">
+        <item>Weight Loss</item>
+        <item>Weight Gain</item>
+        <item>Body Fit</item>
+    </string-array>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+</resources>

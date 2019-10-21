@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/framelayout_rl"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/app_bar_home">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_with_lines">
+
+
+
+        <RelativeLayout
+            android:id="@+id/bottomRelay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="10dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@drawable/back_strip" />
+
+            <ImageView
+                android:id="@+id/workoutBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@drawable/yellow_btn" />
+
+            <ImageView
+                android:id="@+id/messageBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20dp"
+                android:layout_toLeftOf="@+id/workoutBtn"
+                android:padding="15dp"
+                android:src="@drawable/mail_icon" />
+
+            <ImageView
+                android:id="@+id/foodBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@+id/workoutBtn"
+                android:padding="15dp"
+                android:src="@drawable/food_icon" />
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/backgroundImg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/bottomRelay"
+            android:layout_below="@+id/topRelay"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:src="@drawable/home_screen_middle_image" />
+    </RelativeLayout>
+</FrameLayout>

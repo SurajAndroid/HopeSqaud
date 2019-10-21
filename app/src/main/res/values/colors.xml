@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#342D35</color>
+    <color name="colorPrimaryDark">#2a242a</color>
+    <color name="colorAccent">#CCB800</color>
+    <color name="colorYellow">#CCB800</color>
+    <color name="colorBrown">#342D35</color>
+    <color name="text_color">#605C60</color>
+    <color name="colorGrey">#E7E7E7</color>
+    <color name="dark_gray">#b7b5b5</color>
+    <color name="colorLightGrey">#F0F0F0</color>
+    <color name="radio_button_selected_color">#342D35</color>
+    <color name="radio_button_unselected_color">#e0e0e0</color>
+    <color name="red">#CB222E</color>
+    <color name="White">#FFFFFF</color>
+    <color name="blue">#067AFF</color>
+</resources>

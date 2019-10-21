@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorGrey"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar" />
+
+    <info.hoang8f.android.segmented.SegmentedGroup xmlns:segmentedgroup="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/segmentedGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="16dp"
+        android:orientation="horizontal"
+        segmentedgroup:sc_border_width="2dp"
+        segmentedgroup:sc_corner_radius="6dp">
+
+        <RadioButton
+            android:id="@+id/foodPlanRadioBtn"
+            style="@style/RadioButtonSegmented"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="   Food Plan   " />
+
+        <RadioButton
+            android:id="@+id/supplementalRadioBtn"
+            style="@style/RadioButtonSegmented"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="  Supplemental   " />
+
+    </info.hoang8f.android.segmented.SegmentedGroup>
+
+    <WebView
+        android:id="@+id/pdfWebView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorGrey" />
+</LinearLayout>
